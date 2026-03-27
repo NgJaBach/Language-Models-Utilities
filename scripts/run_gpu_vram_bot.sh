@@ -6,6 +6,10 @@
 
 set -euo pipefail
 
+# Conda setup (optional)
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate base
+
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 BOT_DIR="$REPO_ROOT/GpuVramService"
 VENV_DIR="$REPO_ROOT/.venv"

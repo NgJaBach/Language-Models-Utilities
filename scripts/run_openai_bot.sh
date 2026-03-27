@@ -4,6 +4,10 @@
 # Usage: bash scripts/run_openai_bot.sh
 # ─────────────────────────────────────────────────────────────
 
+# Conda setup (optional)
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate base
+
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
